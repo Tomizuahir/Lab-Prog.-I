@@ -13,10 +13,10 @@ int main()
     //Recorremos cada fila(posicion) del conjunto de vectores leyendo, calculando y escribiendo datos
     for(int i=0;i<5;i++)
     {
-        prom_aux=((float)notas1[i]+(float)notas2[i])/2;
+        prom_aux=(float)(notas1[i]+notas2[i])/2;
         promedios[i]=prom_aux;
 
-        printf("Pos: %d Leg: %d Promedio: %.2f\n",i,leg[i],promedios[i]);
+        printf("Pos: %d Leg: %2d Parcial 1: %2d Parcial 2: %2d Promedio: %2.2f\n",i,leg[i],notas1[i],notas2[i],promedios[i]);
     }
 
     //Pausa
